@@ -1,63 +1,96 @@
-* { 
-	box-sizing: border-box; 
+body {
+	text-align: center;
+	margin: 50px;
+	font-size: 20px;
 }
 
-.video-background {
-  background: #000;
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -99;
+#site-container{
+	width: 800px;
+	margin: auto;
 }
 
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+h1{
+	font-size: 20px;
+	color: white;
+	position: absolute;
 }
 
-#vidtop-content {
-	margin:auto;
-	color: #fff;
+#header{
+	margin: auto;
 }
 
-.vid-info { 
-
+#albinljung{
+	display: block;
+	margin: auto;
+	margin-top: -100px;
+	margin-bottom: -50px;
+}
+#blomma{
+	display: block;
+	margin: auto;
 }
 
-.vid-info h1 { 
-	font-size: 2rem; 
-	font-weight: 700; 
-	margin-top: 0; 
-	line-height: 1.2; 
+nav ul{
+	list-style: none;
 }
 
-.vid-info a { 
-	display: block; 
-	color: #fff; 
-	text-decoration: none; 
-	background: rgba(0,0,0,0.5); 
-	transition: .6s background; 
-	border-bottom: none; margin: 1rem auto; 
-	text-align: center; 
+.menu-link{
+	color: black !important;
 }
 
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
+#menu-main{
+	padding: 0;
 }
 
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
+.menu-item{
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 20px;
+	display: inline;
 }
 
-@media all and (max-width: 600px) {
-.vid-info { width: 50%; padding: .5rem; }
-.vid-info h1 { margin-bottom: .2rem; }
+hr{
+	padding: 0;
+	margin-bottom: 10px;
 }
 
-@media all and (max-width: 500px) {
-.vid-info .acronym { display: none; }
+#line{
+	margin-top:0;
+	margin-bottom:20px;
+}
+
+#project-list{
+	padding: 0;
+}
+
+.list-title{
+	font-size: 20px;
+	text-align: left;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+#list-item{
+	list-style: none;
+	padding: 5px;
+}
+
+a:link {
+	color: grey;
+	text-decoration: none;
+}
+
+a:visited {
+	color:grey;
+	text-decoration: none;
+}
+
+a:hover {
+	color:black;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
 }
