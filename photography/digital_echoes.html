@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Albin Ljungqvist</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div id="site-container">
+    <div id="header">
+     <img id="albinljung" src="../img/albin_medium.png" alt="Albin Ljungqvist"> 
+     <img id="blomma" src="../img/kvinna_medium.jpeg" alt="Albin Ljungqvist"> 
+    </div>
+    <nav>
+    <div id="menu-container">
+    <ul id="menu-main">
+      <li class="menu-item" id="projects"><a class="menu-link" href="../index.html">projects</a></li>
+      <li class="menu-item" id="projects"><a class="menu-link" href="../photography.html">photography ✧</a></li>
+      <li class="menu-item" id="projects"><a class="menu-link" href="../kontakt.html">contact</a></li>
+      <li class="menu-item" id="projects"><a class="menu-link" href="../cv.html">cv</a></li>
+    </ul>
+    <hr id="line">
+    </div>
+  </nav>
+
+  <div id="project-container">
+
+    <li class="menu-item" id="backbutton"><a class="menu-link" href="../photography.html"> < back </a></li>
+    
+    <h3 class="list-title">Digital Echoes: A Double Exposure Journey</h3>
+
+    <p class="project_desc">
+    Digital Echoes: A Double Exposure Journey is a fine art photography project that explores the juxtaposition of the digital and the natural world through the medium of analogue double exposure photography. The project's primary aim is to engage viewers in a dialogue about the coexistence of these two seemingly separate worlds and how they intersect and influence one another. Digital Echoes is an ongoing journey, this is the first test.
+    </p>
+
+    <h3 class="list-title">The process:</h3>
+
+    <p class="project_desc">
+    I begin by capturing various images using a film camera. These images serve as the foundation for each photograph, representing the real. In the second phase, I introduce AI genereated and digitally created silhouettes into these landscapes using double exposure techniques. These silhouettes symbolize the encroachment of digitalization and its effects on our environment, offering a stark contrast to the real analogue exposures. The incorporation of artificial intelligence further advances the concept of a virtual digital realm in which only the notion or representation of the tangible world remains. My goal is to create images that are both visually striking and thought-provoking, encouraging viewers to reflect on the evolving relationship between the physical and digital domains, a simulacrum in the desert of the real. 
+    </p>
+
+    <div id="project" class="project">
+
+    <div class="photobox projekt">
+      <div class="photoboxcontent">
+          <img class="photoboxthumb" src="img/blomma_medium.jpeg">
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+
+  <script>
+
+  let bild = "";
+
+  for (let i = 1; i < 15; i++) {
+    bild += "<div class='photobox projekt'><div class='photoboxcontent'><img class='photoboxthumb' src='../photography/digital_echoes/" + i + ".jpg'></a></div></div>";
+  }
+
+  document.getElementById("project").innerHTML = bild; 
+
+  </script>
+  </div>
+  <div class="spacer"></div>
+
+</div>
+</body>
+</html>
