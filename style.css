@@ -235,11 +235,13 @@ a:active {
 
 .photobox{
 	width: 100% !important;
+	float: right;
 }
 
 .photoboxcontent{
 	padding: 10px;
 	text-align: left;
+
 }
 
 .photoboxcontent p{
@@ -254,6 +256,7 @@ a:active {
 	display: block;
 	color: black !important;
 	text-decoration: none;
+	float: right;
 }
 
 @media only screen and (max-width: 900px) {
@@ -273,6 +276,7 @@ a:active {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	height: auto;
+	float: right;
 }
 
 @media only screen and (max-width: 650px) {
